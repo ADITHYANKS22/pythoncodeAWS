@@ -11,7 +11,7 @@ from werkzeug.utils import secure_filename
 app = Flask(__name__)
 
 # All configuration comes from environment variables (injected by Jenkins).
-REGION = os.environ.get("AWS_REGION", "us-east-1")
+REGION = os.environ.get("AWS_REGION", "eu-north-1")
 BUCKET = os.environ.get("S3_BUCKET_NAME")
 
 # Credentials are discovered automatically from the EC2 instance's IAM role.
